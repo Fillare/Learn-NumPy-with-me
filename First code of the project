@@ -1,0 +1,9 @@
+class tape:
+    def __init__(self,len_tap,cut_tap) -> None:
+        self.length_tape=len_tap
+        self.cut_tape=cut_tap
+    
+    def total_rounds(self):
+        times= (self.length_tape//self.cut_tape)
+        return f'tape can be used {times} times'
+print(tape(10,2).total_rounds())
